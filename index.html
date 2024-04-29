@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture In Picture</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">Your Picture in picture web</div>
+        <div class="description">Introducing our latest innovation: a button that effortlessly transforms your chosen screen into a captivating picture-in-picture experience!</div>
+        <div class="choose-btn" onclick="ChooseScreen()">
+            <span>Choose a window</span>
+            <i class="fa-solid fa-display"></i></div>
+        <div class="video-con">
+            <div class="video-container">
+                <div class="shadow"></div>
+                <video id="video" controls src="/picture_in_picture/infinityScroll.mp4" width="100%" height="100%"></video>
+                <button onclick="PicInPic()" class="btn"><i class="fa-brands fa-medium"></i></button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

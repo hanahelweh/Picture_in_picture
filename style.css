@@ -1,0 +1,87 @@
+body{
+    background: rgb(4, 5, 15);
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    position: relative;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.head{
+    color: rgb(151, 171, 211);
+    font-weight: 700;
+    font-size: 70px;
+    display: inline-block;
+}
+.head::after{
+    content: '';
+    width: 80%;
+    height: 5px;
+    border-radius: 1rem;
+    background-color: rgba(151, 171, 211,0.8);
+    box-shadow: 0px 0px 25px rgb(151, 171, 211);
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+}
+.description{
+    font-size: 18px;
+    margin-top: 50px;
+    line-height: 30px;
+    max-width: 700px;
+    color: rgb(205, 215, 234);
+    padding-left: 10px;
+}
+.video-con{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.video-container{
+    display: inline-block;
+    border: 2px solid rgb(151, 171, 211);
+    border-radius: 15px;
+    max-width: 600px;
+}
+.shadow{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(151, 171, 211,0.4);
+    filter: blur(50px);
+}
+#video{
+    border-radius: 15px;
+}
+.btn{
+    background-color: rgb(20, 24, 38);
+    border: 1px solid rgb(151, 171, 211);
+    border-radius: 50%;
+    color: rgb(151, 171, 211);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.choose-btn{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(151, 171, 211);
+    cursor: pointer;
+    border-bottom: 1px solid rgb(151, 171, 211);
+    display: inline-block;
+}
+.choose-btn span{
+    margin-right: 5px;
+    font-size: 16px;
+}
