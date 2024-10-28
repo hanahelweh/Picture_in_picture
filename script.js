@@ -1,14 +1,5 @@
 let video=document.getElementById("video");
 let button=document.querySelector('.btn');
-async function PicInPic(){
-    try{
-        await video.requestPictureInPicture();
-    }
-    catch(error){
-        console.log(error);
-    }
-}
-
 async function ChooseScreen(){
     try{
         let captureStream = await navigator.mediaDevices.getDisplayMedia();
